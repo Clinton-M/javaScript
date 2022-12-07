@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cls">
+        <script>
+            const courses = [
+                {name:'HTML',status:'medio'},
+                {name:'CSS',status:'alto'},
+                {name:'JavaScript',status:'alto'},
+            ];
+
+            const cls = document.getElementById('cls');
+            const lis = courses.map(cour =>{
+                return `<li> curso: ${cour.name}- stado: ${cour.status}</li>`;
+            })
+
+            cls.innerHTML = lis.join('');
+
+        </script>
+    </div>
+</body>
+</html>

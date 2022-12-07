@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <script>
+            const products = [
+                { name: 'Apple', price: 100 },
+                { name: 'Orange', price: 80 },
+                { name: 'Banana', price: 120 },
+            ];
+
+            const app = document.getElementById('app');
+            products.forEach(product =>{
+                app.innerHTML += `<li>${product.name} - ${product.price}</li>`; 
+            })
+            
+        </script>
+    </div>
+
+    <div id="cls">
+        <script>
+            const courses = [
+                {name:'HTML',status:'medio'},
+                {name:'CSS',status:'alto'},
+                {name:'JavaScript',status:'alto'},
+            ];
+
+            const cls = document.getElementById('cls');
+            courses.forEach(cour =>{
+                cls.innerHTML += `<li> curso: ${cour.name}- stado: ${cour.status}</li>`;
+            })
+
+        </script>
+    </div>
+</body>
+</html>

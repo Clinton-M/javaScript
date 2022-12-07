@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin:  3rem auto;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
