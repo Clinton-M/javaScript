@@ -1,1 +1,0 @@
-let saludar = 'Hola Mundo';
